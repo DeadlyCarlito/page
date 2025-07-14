@@ -49,9 +49,24 @@ body {
 .lista{
     font-size: 15px;
     margin: 0 auto;
+   text-align: center;
+    list-style-type: none;
   }
   
+  p{
   
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text; /* Wymagane dla niektórych przeglądarek do przycięcia tła do tekstu */
+  background-clip: text; /* Standardowa właściwość */
+  color: transparent; /* Sprawia, że tekst jest przezroczysty, pokazując tło */
+  -webkit-text-fill-color: transparent; /* Wymagane dla niektórych przeglądarek do przezroczystości tekstu */
+
+  /* Dodatkowe style dla lepszego wyglądu */
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+ } 
   
 
 header {
