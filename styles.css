@@ -176,6 +176,21 @@ address {
  font-family: Helvetica;
 }
 
+.rotating-image {
+    width: 200px; /* Ustaw szerokość obrazu */
+    height: auto; /* Zachowaj proporcje */
+    animation: rotate360 5s linear infinite; /* Nazwa animacji, czas, funkcja czasu, iteracje */
+    transform-origin: center; /* Ustawia punkt obrotu na środek obrazu */
+  }
 
+  /* Definicja animacji obrotu */
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg); /* Początkowy stan obrotu */
+    }
+    to {
+      transform: rotate(360deg); /* Końcowy stan obrotu (pełny obrót) */
+    }
+  }
 
 
