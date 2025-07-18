@@ -1,0 +1,128 @@
+body {
+    
+    display: flex;
+    justify-content: center; 
+    min-height: 100vh; 
+    align-items: flex-start; 
+    background-image: url(https://cdn.vectorstock.com/i/500p/16/63/dark-tech-hexagon-abstract-background-vector-39591663.jpg); 
+    background-size: cover;
+    overflow-y: auto; 
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+
+    gap: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12 {
+   
+    width: auto;
+    height: 300px; 
+    background-color: #6699ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+    border: 1px solid #3366cc;
+}
+
+
+.box1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABtrUWWeRChfPyBD1P3qP4DlH79Bwv3qirA&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box2 {
+    background-image: url(https://m.media-amazon.com/images/I/71cr-UivXLL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box3 {
+    background-image: url(https://m.media-amazon.com/images/I/71FueAKQ22L._UF1000,1000_QL80_.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box4 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/b/bd/Metallica_-_...And_Justice_for_All_cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box5 {
+    background-image: url(https://i.ytimg.com/vi/DqDeH3hwxfw/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box6 {
+    background-image: url(https://m.media-amazon.com/images/I/61Hv8ePpB+L._UF1000,1000_QL80_.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box7 {
+    background-image: url(https://voiceshop.pl/userdata/public/gfx/0e7ae34b4a0867773f2d08e20e42099e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box8 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/7/74/Metallica_-_Garage_Inc_cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box9 {
+    background-image: url(https://ecsmedia.pl/c/st-anger-b-iext160751930.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box10 {
+    background-image: url(https://www.linus-records.it/cdn/shop/files/My5qcGVn_1_44cf875f-6c06-4d6c-8796-b8be9f332fdd.jpg?v=1736200957);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box11 {
+    background-image: url(https://m.media-amazon.com/images/I/81ZbC8jmkrL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box12 {
+    background-image: url(https://ecsmedia.pl/c/16697338730706743-jpg-gallery.big-iext122138895.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+.box1 p, .box2 p, .box3 p, .box4 p, .box5 p, .box6 p, .box7 p, .box8 p, .box9 p, .box10 p, .box11 p, .box12 p {
+    margin-top: 20px;
+}
