@@ -129,6 +129,9 @@ section {
 
 .main-header {
     background-image: url(https://t4.ftcdn.net/jpg/02/44/88/95/360_F_244889549_k2PxVcdC50Pu1kdeuLE6xDlqMUmxS5u3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
     display: flex; /* Włącza Flexbox */
     justify-content: space-between; /* Rozkłada elementy: lewy na lewo, prawy na prawo, środkowy pomiędzy */
     align-items: center; /* **Kluczowe!** Wyśrodkowuje wszystkie elementy (left, center, right) pionowo */
