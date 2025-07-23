@@ -1,20 +1,63 @@
-
-
-
 @media screen and (max-width: 768px) {
+    /* Twoje obecne reguły */
     .wprowadzenie {
         flex-direction: column;
         align-items: center;
     }
 
     .lewa, .prawa, .kolumna-srodkowa {
-        width: 90%;
+        width: 90%; /* Zapewnia marginesy po bokach */
     }
 
     .srodek, .rodzaje, .tryby, .mapy, .podsumowanie {
-        width: 100%;
+        width: 100%; /* Wypełnia dostępną przestrzeń wewnątrz 90% szerokości kolumn */
+    }
+
+    /* Dodatkowe poprawki dla mobilnych widoków */
+
+    nav {
+        height: auto; /* Pozwoli nawigacji dostosować wysokość do zawartości */
+        flex-direction: column; /* Ułożenie elementów nawigacji jeden pod drugim */
+        justify-content: center; /* Wyśrodkowanie w pionie, jeśli elementy są ułożone w kolumnie */
+        padding: 10px 0; /* Dodatkowy padding dla lepszego wyglądu */
+    }
+
+    nav a { /* Selektor dla linków w nawigacji */
+        font-size: 18px; /* Zmniejsz rozmiar czcionki dla linków */
+        padding: 5px 0; /* Dodatkowy padding dla klikalnych obszarów */
+    }
+
+    header {
+        height: 200px; /* Zmniejsz wysokość nagłówka na mobile */
+        margin-top: 5px; /* Możesz dostosować, jeśli nawigacja zmienia wysokość */
+    }
+
+    .logo {
+        width: 80%; /* Dostosuj szerokość logo na mobile */
+        max-width: 300px; /* Ustaw maksymalną szerokość, aby nie było zbyt duże */
+    }
+
+    .lewa img {
+        height: auto; /* Pozwoli obrazowi dostosować wysokość proporcjonalnie do szerokości */
+        max-width: 100%; /* Upewnij się, że obraz nie wychodzi poza kontener */
+    }
+
+    .prawa img {
+        height: auto; /* To samo co wyżej */
+        max-width: 100%;
+    }
+
+    /* Rozwiązywanie problemów z floatami na mobile */
+    .float-left, .float-right {
+        float: none; /* Usuń floaty na mobile */
+        width: 100%; /* Ustaw pełną szerokość */
+        margin-right: 0;
+        margin-left: 0;
     }
 }
+
+
+
 
 
 
