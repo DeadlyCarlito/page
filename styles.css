@@ -1,0 +1,188 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(226, 231, 233, 0.418);
+    margin: 0;
+    padding: 0;
+   
+}
+
+header { 
+    width: 98%;
+    height: 290px;
+    background-image: url(https://diagonalthoughts.com/wp-content/uploads/2008/11/bashir.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-top:85px;
+    margin-left: 1%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+
+
+p, h1, li{
+   color:rgba(0, 0, 0, 0.788); 
+}
+
+
+nav {
+background-color: rgba(157, 160, 163, 0.5);
+display: flex;
+justify-content: space-evenly;
+height: 80px;
+border-radius: 5px;
+align-items: center;
+border-top: 2px solid;
+border-bottom: 2px solid;
+position: fixed;    
+top: 0;
+width: 98%;
+z-index: 1000;
+margin-left: 1%;
+border: 1px solid rgba(46, 44, 44, 0.459);
+   
+
+}
+
+i{
+    color: black;
+} 
+
+  .logo { 
+    width: 500px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    
+}
+
+.srodek h1, .prawa h1, .lewa h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.prawa p, .lewa p {
+    font-size: 20px;
+    text-align: justify;
+}
+.srodek p{
+    font-size: 20px;
+    text-align: justify;
+    
+}  
+
+
+
+.wprowadzenie {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: flex-start;
+    margin-top: 0;
+    width: 98%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+
+
+.kolumna-srodkowa {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* wyśrodkowanie elementów wewnątrz */
+    width: 59%;
+    gap: 10px; /* odstęp między środkowymi elementami */
+}
+
+.srodek, .rodzaje, .tryby, .mapy, .podsumowanie {
+    background-color: rgba(157, 160, 163, 0.5);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 44, 44, 0.459);
+    border-radius:  5px;  
+}
+
+
+.lewa, .prawa  {
+    background-color: rgba(157, 160, 163, 0.5);
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 44, 44, 0.459);
+    border-radius:  5px;  
+    text-align: center;
+    
+   
+}
+
+.lewa a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  
+}
+
+.prawa a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+   
+}
+
+.lewa img {
+    width: 100%;
+    height: 550px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+
+.prawa img {
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;   
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+
+.float-left {
+  float: left;
+  width: 49%;
+  margin-right: 5px;
+}
+
+.float-right {
+  float: right;
+  width: 49%;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .wprowadzenie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lewa, .prawa, .kolumna-srodkowa {
+        width: 90%;
+    }
+
+    .srodek, .rodzaje, .tryby, .mapy, .podsumowanie {
+        width: 100%;
+    }
+}
