@@ -1,59 +1,64 @@
-@media screen and (max-width: 768px) {
-    /* Twoje obecne reguły */
-    .wprowadzenie {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  header {
+    height: 50px;
+    margin-top: 70px;
+  }
 
-    .lewa, .prawa, .kolumna-srodkowa {
-        width: 90%; /* Zapewnia marginesy po bokach */
-    }
+  nav {
+    flex-direction: row;
+    height: auto;
+    max-height: 50px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 6px;
+  }
 
-    .srodek, .rodzaje, .tryby, .mapy, .podsumowanie {
-        width: 100%; /* Wypełnia dostępną przestrzeń wewnątrz 90% szerokości kolumn */
-    }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
 
-    /* Dodatkowe poprawki dla mobilnych widoków */
+  .wprowadzenie {
+    display: block 
+     
+   
+  }
 
-    nav {
-        height: auto; /* Pozwoli nawigacji dostosować wysokość do zawartości */
-        flex-direction: column; /* Ułożenie elementów nawigacji jeden pod drugim */
-        justify-content: center; /* Wyśrodkowanie w pionie, jeśli elementy są ułożone w kolumnie */
-        padding: 10px 0; /* Dodatkowy padding dla lepszego wyglądu */
-    }
 
-    nav a { /* Selektor dla linków w nawigacji */
-        font-size: 18px; /* Zmniejsz rozmiar czcionki dla linków */
-        padding: 5px 0; /* Dodatkowy padding dla klikalnych obszarów */
-    }
+  .lewa, .prawa, .kolumna-srodkowa {
+    justify-content: center;
+    width: auto;
+    max-width: 230px;
+    margin-top: 5px;
+    margin: 10px 0;
+  }
 
-    header {
-        height: 200px; /* Zmniejsz wysokość nagłówka na mobile */
-        margin-top: 5px; /* Możesz dostosować, jeśli nawigacja zmienia wysokość */
-    }
+  .srodek h1, .prawa h1, .lewa h1, .wprowadzenie h1 {
+    font-size: 5px;
+ 
+  }
 
-    .logo {
-        width: 80%; /* Dostosuj szerokość logo na mobile */
-        max-width: 300px; /* Ustaw maksymalną szerokość, aby nie było zbyt duże */
-    }
+  .srodek p, .prawa p, .lewa p {
+    font-size: 15px;
+  }
 
-    .lewa img {
-        height: auto; /* Pozwoli obrazowi dostosować wysokość proporcjonalnie do szerokości */
-        max-width: 100%; /* Upewnij się, że obraz nie wychodzi poza kontener */
-    }
+  .lewa img, .prawa img {
+    height: auto;
+    max-height: 90px;
+    width: auto;
+    max-width: 150px;
+  }
 
-    .prawa img {
-        height: auto; /* To samo co wyżej */
-        max-width: 100%;
-    }
+  .float-left, .float-right {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
 
-    /* Rozwiązywanie problemów z floatami na mobile */
-    .float-left, .float-right {
-        float: none; /* Usuń floaty na mobile */
-        width: 100%; /* Ustaw pełną szerokość */
-        margin-right: 0;
-        margin-left: 0;
-    }
+  .lewa a, .prawa a {
+    font-size: 10px;
+  }
+
 }
 
 
