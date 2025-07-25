@@ -1,3 +1,4 @@
+
 @media (max-width: 768px) {
   header {
     height: 50px;
@@ -24,7 +25,13 @@
    
   }
 
+#naglowek {
+    display: none;
+    
 
+   
+   
+  }
   .lewa, .prawa, .kolumna-srodkowa {
     justify-content: center;
     width: auto;
@@ -34,7 +41,8 @@
   }
 
   .srodek h1, .prawa h1, .lewa h1, .wprowadzenie h1 {
-    font-size: 5px;
+    font-size: 15px;
+    text-align: center;
  
   }
 
@@ -56,12 +64,10 @@
   }
 
   .lewa a, .prawa a {
-    font-size: 10px;
+    font-size: 20px;
   }
 
 }
-
-
 
 
 
