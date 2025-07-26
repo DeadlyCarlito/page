@@ -1,0 +1,249 @@
+body h1{
+font-size: 2em;
+color:black;
+}
+body p{
+    font-size: 1.5em;
+    color: black;
+}
+body{
+    display: border-box;
+    background-color: whitesmoke;
+    text-align: justify;
+    width: 100%;
+   
+    
+}
+
+
+/*-----------------------------------naglowek---------------------------*/
+header{
+
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    height: 250px;
+    background-image: url(https://wallpapercrafter.com/desktop2/815868-tank-Battlefield-3-M1-ABRAMS-Battlefield-video.jpg);
+    background-size: cover;
+    background-position:center;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 5px;
+}
+/*-------------------------------nav-custom----------------------*/
+
+
+.custom-nav {
+    display: flex;
+    flex-direction: column;       
+    align-items: center;          
+    justify-content: space-evenly;
+    width: 9%;                    
+    height: 250px;
+    margin-left: 0;
+    padding: 0;
+    background-color: rgba(109, 122, 109, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.nav-left-sticky-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-left-sticky-list li {
+    margin: 5px 0; 
+}
+  
+.nav-horizontal {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(109, 122, 109, 0.3);
+    margin-top: 15px;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+
+.nav-horizontal-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-horizontal-list li {
+        list-style: none;
+    margin: 0 10px;
+}
+
+.media-navi{
+    display: none;
+}
+
+/*------------------------------content---------------------------*/
+
+.main-content{
+   display: border-box;
+    width: 80%;
+    margin-left: 10%; 
+    margin-bottom: 10px; 
+}
+/*------------------------------prolog, gameplay, gamemodes, maps, summary, nations---------------------------*/
+.prolog, .gameplay, .gamemodes, .maps, .summary, .nations, .galeria{
+ background-color: rgba(109, 122, 109, 0.3);
+ border-radius: 5px;
+ margin-top: 15px; 
+ padding: 15px;
+ text-align: left;
+}
+
+
+
+/*------------------------------floats---------------------------*/
+
+.float-right {
+  float: right;
+  position: relative;
+  top:-120px;
+  width: 30%;
+  margin-left: 5px;}
+
+  .float-right1 {
+  float: right;
+  position: relative;
+  top:-150px;
+  width: 49%;
+  margin-left: 5px;}
+
+  .float-right2 {
+  float: right;
+  position: relative;
+  top:-280px;
+  left: -50px;
+  width: 55%;
+  margin-left: 5px;}
+
+/*----------------------nations img -------------------------*/
+
+.nations img{
+    position: relative;
+    left: 290px;
+ top: -70px;   
+}
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------media---------------------------------------------------*/
+/*------------------media---------------------------------------------------*/
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+
+    }
+    header{
+        width: 90%;
+        margin-left: 5%;
+        height: 150px;
+        
+    }
+
+    .custom-nav  {
+        display:none;
+        width: 90%;
+        margin-left: 5%;
+        height: 250px;
+        line-height: normal;
+        position: sticky;
+        margin-top: 5px;
+    }
+    .nav-horizontal {
+        margin-top:5px;
+        width: 90%;
+        margin-left: 5%;
+    }
+        
+.media-navi{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(109, 122, 109, 0.3);
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.media-navi-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.media-navi li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+
+
+
+.main-content{
+   width: 90%;
+    margin-left: 5%; 
+  }
+.nations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+    margin-left:0px;
+  }
+
+  .nations img {
+    position: static; 
+    margin: 0;
+    width: 80px; 
+    height: auto;
+    margin-left:50px;
+}
+
+  .float-right, .float-right1, .float-right2 {
+    display: none;
+  }
+}
