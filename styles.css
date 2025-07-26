@@ -166,7 +166,7 @@ header{
 
 /*------------------media---------------------------------------------------*/
 /*------------------media---------------------------------------------------*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (orientation: landscape) and (max-height: 768px) {
     body{
         width: 100%;
 
