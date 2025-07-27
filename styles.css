@@ -1,0 +1,351 @@
+body h1{
+font-size: 2em;
+color:black;
+}
+body p{
+    font-size: 1.5em;
+    color: black;
+}
+body{
+    display: border-box;
+    background-color: lightgray;
+    text-align: justify;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+
+/*-----------------------------------naglowek---------------------------*/
+header{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    height: 250px;
+    background-image: url(https://wallpapercrafter.com/desktop2/815868-tank-Battlefield-3-M1-ABRAMS-Battlefield-video.jpg);
+    background-size: cover;
+    background-position:center;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 5px;
+}
+/*-------------------------------nav-custom----------------------*/
+
+
+.custom-nav {
+    display: flex;
+    flex-direction: column;       
+    align-items: center;          
+    justify-content: space-evenly;
+    width: 9%;                    
+    height: 250px;
+    margin-left: 0;
+    padding: 0;
+    background-color: rgba(109, 122, 109, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/*-------------------nevi lewo-------------------*/
+.nav-left-sticky-list {
+    position: fixed; 
+    top: 9px;
+    left: 0;
+    background-color: rgba(109, 122, 109, 0.3);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 280px; 
+    z-index: 1000; 
+}
+
+.nav-left-sticky-list a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+.nav-left-sticky-list a:hover {
+    transform: scale(1.4);
+}
+  
+/*-------------------navi środek-------------------*/
+
+.nav-horizontal {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(109, 122, 109, 0.3);
+    margin-top: 15px;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    border-radius: 5px;
+}
+
+.nav-horizontal-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.nav-horizontal-list li {
+        list-style: none;
+    margin: 0 10px;
+}
+
+.nav-horizontal-list a{
+text-decoration: none;
+color: inherit;
+transition: transform 0.3s;
+}
+
+.nav-horizontal-list a:hover{
+  transform: scale(1.4)  
+}
+
+/*---------------------media navi----------------*/
+
+.media-navi{
+    display: none;
+}
+.media-navi-list a{
+text-decoration: none;
+color: inherit;
+transition: transform 0.3s;    
+}
+.media-navi-list a:hover{
+  transform: scale(1.4)  
+}
+
+
+
+/*------------------------------content---------------------------*/
+
+.main-content{
+   display: border-box;
+    width: 70%;
+    margin-left: 15%; 
+    margin-bottom: 10px; 
+    z-index: 10000;
+}
+/*------------------------------prolog, gameplay, gamemodes, maps, summary, nations---------------------------*/
+.prolog, .gameplay, .gamemodes, .maps, .summary, .nations{
+ background-color: rgba(109, 122, 109, 0.3);
+ border-radius: 5px;
+ margin-top: 15px; 
+ padding: 15px;
+ text-align: left;
+}
+
+.prolog h1, .gameplay h1, .summary h1{
+text-align: center;
+}
+#center, #center2{
+ text-align: center;
+}
+
+
+/*------------------------------floats---------------------------*/
+
+.float-right {
+  float: right;
+  position: relative;
+  top:-120px;
+  width: 30%;
+  margin-left: 5px;}
+
+  .float-right1 {
+  float: right;
+  position: relative;
+  top:-150px;
+  width: 49%;
+  margin-left: 5px;}
+
+  .float-right2 {
+  float: right;
+  position: relative;
+  top:-280px;
+  left: -50px;
+  width: 55%;
+  margin-left: 5px;}
+
+/*----------------------nations img -------------------------*/
+
+.nations h1{
+    position: relative;
+    left: 600px;
+}
+
+.nations img{
+    position: relative;
+    left: 220px;
+ top: -10px;  
+ width: 180px;
+}
+.nations-img img{
+    transition: transform 0.3s; 
+}
+
+.nations-img img:hover{
+     transform: scale(1.4) ;  
+}
+
+/*----------------------galeria img/grid -------------------------*/   
+
+.galeria{  
+background-color: rgba(109, 122, 109, 0.3);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 10px;
+
+  margin-top: 10px;
+ height: auto;  
+}
+
+.galeria > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.galeria img{
+max-width: 90%;
+transition: transform 0.3s; 
+}
+
+.galeria img:hover{
+transform: scale(2);
+align-items: center;
+}
+
+
+
+/*------------------media---------------------------------------------------*/
+/*------------------media---------------------------------------------------*/
+@media screen and (max-width: 768px), screen and (orientation: landscape) and (max-height: 500px){
+    body{
+        width: 100%;
+
+    }
+    header{
+        width: 90%;
+        margin-left: 5%;
+        height: 150px;
+        
+    }
+
+    .custom-nav  {
+        display:none;
+        width: 90%;
+        margin-left: 5%;
+        height: 250px;
+        line-height: normal;
+        position: sticky;
+        margin-top: 5px;
+    }
+    .nav-horizontal {
+        margin-top:5px;
+        width: 90%;
+        margin-left: 5%;
+     
+    }
+
+ .nav-left-sticky-list{
+    display: none;
+ }       
+.media-navi{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(109, 122, 109, 0.3);
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.media-navi-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.media-navi li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+.main-content{
+   width: 90%;
+    margin-left: 5%; 
+  }
+.nations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+    margin-left:0px;
+  }
+
+  .nations img {
+    position: static; 
+    margin: 0;
+    width: 80px; 
+    height: auto;
+    margin-left:50px;
+
+}
+.nations h1{
+position: relative;
+left: 0;   
+    
+}
+
+
+  .float-right, .float-right1, .float-right2 {
+    display: none;
+  }
+
+  .galeria img{
+    width: 50%;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .galeria{
+    margin-top: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    background-color: rgba(109, 122, 109, 0.3);
+    align-items: center;
+  }
+  
+
+.galeria img:hover{
+transform: scale(8);
+align-items: center;
+overflow: hidden;
+}
+}
