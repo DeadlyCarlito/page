@@ -1,0 +1,458 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body h1{
+    font-size: 1,5em;
+    color: rgb(224, 217, 217);
+    text-align: center;
+    padding-left: 10px; 
+    line-height: 1.5;
+}
+body h2{
+    font-size: 1.4em;
+     color: rgb(224, 217, 217);
+    text-align: left;
+    padding-left: 20px;
+line-height: 1.3; }
+
+body p{
+    font-size: 1.3em;
+    color: rgb(224, 217, 217);
+    text-align: left; 
+    padding-left: 20px;
+    line-height: 1.2;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+ul, li {
+  list-style-type: square; 
+  color: rgb(224, 217, 217);
+  line-height: 1.5;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+a{
+  color: inherit;  
+}
+
+#link{
+    text-align: center;
+}
+
+body{
+    background-color: #1A1A1A;
+    text-align: left; 
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;  
+}
+
+
+.site-footer{
+   width: 70%;
+    margin-left: 15%; 
+    background-color: #2C2C2C;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  
+}
+
+/*-----------------nagłówek--------------------*/
+header{
+    background-image: url(https://wallpapercrafter.com/desktop2/815868-tank-Battlefield-3-M1-ABRAMS-Battlefield-video.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.modes, .maps, .research, .site-footer, .mid-nav{
+  width: 70%;
+    margin-left: 15%; 
+    background-color: #2C2C2C;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 10px; 
+  }
+
+.mid-nav{
+    background-image: url(https://media.istockphoto.com/id/184601291/photo/xxxl-dark-concrete.jpg?s=612x612&w=0&k=20&c=2UaAUWtEf6YvyliWImDML-s1GSfZw5BlEvg4IyWFedk=);
+}
+
+  .maps h1, .research h1{
+    padding-top: 15px;
+  }
+
+.modes-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.modes-logo figure {
+    margin: 0;
+}
+
+.game-types, .game-modes, .maps-txt, .research-txt{
+    background-color:#424242;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+
+.game-modes-types, .maps-types{
+ background-color:#424242;
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.arcade, .realistic, .simulations, .mixed, .air, .ground, .sea{
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:#302f2f65; 
+   border-radius: 5px;
+}
+
+.ground img, .air img, .sea img{
+     margin-bottom: 15px;
+     transition: 0.5s ease-in;
+}
+
+.ground img:hover, .air img:hover, .sea img:hover{
+    transform: scaleX(1.3) scaleY(1.3);
+    box-shadow: 0 15px 15px rgba(31, 29, 29, 0.836);
+}
+
+.game-modes-types h1{
+    text-align: left;
+}
+
+.game-types li
+{
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: rgb(224, 217, 217);
+    
+}
+
+.game-modes-types, .game-modes, .maps, .research-txt li{
+    line-height: 1;
+    margin-bottom: 10px;
+    color: rgb(224, 217, 217);
+
+}
+
+
+.research-txt figure{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ .research-txt figcaption{
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgb(224, 217, 217);
+}    
+
+
+.site-footer{
+   
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    width: 70%;
+    margin-left: 15%; 
+    background-color: #2C2C2C;
+    }
+
+.site-footer a {
+  color: #491717;
+  text-decoration: none;
+}
+    
+
+/*------------------------------navi-----*/
+.mid-nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column; 
+        }
+        
+        .mid-list, .mid-list-second {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mid-list ul, .mid-list-second ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            gap: 0px;
+            font-size: 0.9em;
+            padding-top: 15px;
+        }
+
+        .mid-list-second ul {
+            padding-top: 15px;
+            gap: 25px;
+            font-size: 1.2em; 
+        }
+
+        .mid-list li, .mid-list-second li{
+            list-style: none;
+        }
+
+        .mid-list a, .mid-list-second a, .dropdown-toggle {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: ease-in 0.3s;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        
+        .mid-list a:hover, .mid-list-second a:hover, .dropdown-toggle:hover {
+            background-color: #555;
+            box-shadow: 5   15px 15px #491717;
+        }
+
+       
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display:none; 
+            position: absolute; 
+            top: 100%; 
+            left: 50%;
+            transform: translateX(-50%); 
+            background-color: #555;
+            min-width: 150px;
+            z-index: 1000;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px;
+            opacity: 0;
+        }
+
+        .dropdown-menu.active {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 10px;
+            opacity: 100;
+
+        }
+
+
+
+        .hamburger{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------media---------------------------------------------------*/
+@media screen and (max-width: 470px), screen and (orientation: landscape) and (max-height: 500px){
+
+body {
+        overflow-x: hidden;
+       
+    }
+  
+/*----------tresć------*/
+
+    header{
+        display: none;     
+    }
+
+    .modes, .mid-nav, .maps, .research {
+        width: 100%;
+    }
+
+    .game-modes-types, .maps-types{
+ background-color:#424242;
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+     box-sizing: border-box;
+
+    }
+
+    .arcade, .realistic, .simulations, .mixed, .air, .ground, .sea{
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:#302f2f65; 
+    border-radius: 5px;
+    }
+
+    .ground img, .air img, .sea img{
+     margin-bottom: 15px;
+     width: 100%;
+    }
+
+    .modes img{
+ width: 100%;
+    }
+
+    .ground img:hover, .air img:hover, .sea img:hover{
+    display: none;
+    }
+
+    .rest-of-type-img img{
+    width: 100%;
+    }
+
+    .research-txt img{
+    width: 100%;
+    }
+
+    .research-txt figcaption{
+    display: none;
+    }  
+
+    .site-footer{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    margin-left: 0;
+    }
+
+/*-----------navi-------------*/
+
+  .mid-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              width: 100%;
+            }
+
+            .hamburger {
+                display: block; 
+                font-size: 30px;
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+
+            .menu-content {
+                display: none; 
+                position: absolute;
+                top: 60px; 
+                left: 0;
+                width: 100%;
+                background-color: #444;
+                flex-direction: column;
+                z-index: 999;
+                padding-bottom: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            
+            .menu-content.active {
+                display: flex;
+                width: 50%; 
+            }
+
+            .mid-list,
+            .mid-list-second {
+                flex-direction: column;
+            }
+
+            .mid-list ul,
+            .mid-list-second ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+
+            .mid-list li,
+            .mid-list-second li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .mid-list a,
+            .mid-list-second a,
+            .dropdown-toggle {
+                display: block;
+            }
+
+            .dropdown-menu {
+                position: static; 
+                transform: none;
+                width: auto;
+                background-color: transparent;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .dropdown-menu li a {
+                padding-left: 30px; 
+                background-color: #666;
+            }
+
+
+
+
+
+
+
+
+
+
+ }
+
+
+
+
